@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cozy Café &amp; Coffee House - About</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Custom styles for specific aesthetics */
+
+        /* Animated Body Background */
+        body {
+            min-height: 100vh;
+            background: url("../public/images/coffee-bg.png") !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-attachment: fixed !important;
+            animation: floatBG 15s ease-in-out infinite;
+        }
+
+        @keyframes floatBG {
+
+            0%,
+            100% {
+                background-position: center center;
+            }
+
+            25% {
+                background-position: 30% 70%;
+            }
+
+            50% {
+                background-position: 70% 30%;
+            }
+
+            75% {
+                background-position: 40% 60%;
+            }
+        }
+
+        /* Liquid Glass Header */
+        .glass-header {
+            /* Reset/Override previous generic glass/dark styles */
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.2) 0%,
+                    rgba(255, 255, 255, 0.08) 50%,
+                    rgba(255, 255, 255, 0.03) 100%) !important;
+
+            backdrop-filter: blur(10px);
+            /* Use standard blur as fallback/default */
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark mode overrides if necessary - though glass usually transcends mild dark/light switches by being transparent */
+        .dark .glass-header {
+            background: linear-gradient(135deg,
+                    rgba(0, 0, 0, 0.4) 0%,
+                    rgba(0, 0, 0, 0.2) 50%,
+                    rgba(0, 0, 0, 0.1) 100%) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../public/build/assets/app-TD2hNZJ_.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-espresso antialiased selection:bg-primary/30 min-h-screen flex flex-col ">
+    <!-- Sticky Header -->
+    <header class="fixed top-0 w-full z-50 glass-header border-b border-primary/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <span class="material-icons text-primary text-3xl">coffee</span>
+                    <span class="text-2xl font-semibold italic text-espresso dark:text-white">Café Moka</span>
+                </div>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a class="text-espresso hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors text-lg font-medium"
+                        href="index.html">Home</a>
+                    <a class="text-espresso hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors text-lg font-medium"
+                        href="menu.html">Menu</a>
+                    <a class="text-espresso hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors text-lg font-medium"
+                        href="about.html">About</a>
+                    <a class="text-espresso hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors text-lg font-medium"
+                        href="contact.html">Contact</a>
+                </nav>
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center gap-4">
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-medium transition-transform transform hover:-translate-y-0.5 shadow-md shadow-primary/20">
+                        Order Now
+                    </button>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-espresso dark:text-white hover:text-primary focus:outline-none">
+                        <span class="material-icons text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm tracking-wider uppercase mb-4 font-semibold">Our
+                Story</span>
+            <h1
+                class="text-5xl md:text-7xl font-medium text-stone-900 dark:text-white mb-6 tracking-tight leading-tight">
+                About Our Café
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl md:text-2xl text-stone-700 dark:text-stone-300 italic font-light">
+                Brewing memories &amp; crafting community since 2014.
+            </p>
+        </div>
+    </header>
+    <!-- Story Section -->
+    <section class="py-16 md:py-24 relative overflow-hidden">
+        <!-- Decorative bg element -->
+        <div
+            class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+            <!-- Block 1: Text Left, Image Right -->
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div class="lg:w-1/2 space-y-6">
+                    <h2 class="text-4xl md:text-5xl font-medium text-stone-900 dark:text-white relative">
+                        <span class="relative z-10">Our humble beginnings</span>
+                        <span class="absolute bottom-1 left-0 w-24 h-3 bg-primary/20 -z-0"></span>
+                    </h2>
+                    <p class="text-xl text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                        It started with a simple idea: that coffee should be more than just a morning ritual—it should
+                        be an
+                        experience. In the winter of 2014, we opened our doors in a small, renovated warehouse with
+                        nothing
+                        but a
+                        second-hand espresso machine and a dream to bring people together.
+                    </p>
+                    <p class="text-xl text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                        We spent months sourcing the perfect beans, tasting endless roasts, and designing a space that
+                        felt
+                        like a
+                        living room away from home. Every table, every chair, and every cup was chosen to spark
+                        conversation
+                        and
+                        comfort.
+                    </p>
+                    <div class="pt-4">
+                        <span class="text-primary italic text-2xl font-medium">- Eleanor &amp; James, Founders</span>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div
+                        class="absolute inset-0 bg-primary translate-x-4 translate-y-4 rounded-xl opacity-20 hidden lg:block">
+                    </div>
+                    <img alt="Vintage photo of the original coffee shop storefront"
+                        class="relative rounded-xl shadow-xl w-full object-cover aspect-[4/3] border border-stone-200 dark:border-stone-800"
+                        data-alt="Exterior of a charming small coffee shop with rustic signage"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDANC4RK-9dxmaWfzAVDPX_yM2jF2zULND04IL09hB-e889eMIMcw7Azc7bXei7_u99UV9qFJBAL_Ogo0ZF3MaUnZWb1v6FpY8QbSaJiKEiLagFTOylFdTPsiQ5hl5gjSZgwl5DsOWa9ps_BVcTdV-UPAu281nUaXfhi51y9h3Svib9m0DLlN-gLEhi8wn0pyDcxPXK6y6KWkmNFMVcvnQyA2w1gMb3BbEtXajUQo-5CGSmj4X0RZqDKZWZkjNViek7MwLfoDofxTk3" />
+                </div>
+            </div>
+            <!-- Block 2: Image Left, Text Right -->
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+                <div class="lg:w-1/2 space-y-6">
+                    <h2 class="text-4xl md:text-5xl font-medium text-stone-900 dark:text-white relative">
+                        <span class="relative z-10">Crafting the perfect cup</span>
+                        <span class="absolute bottom-1 left-0 w-24 h-3 bg-primary/20 -z-0"></span>
+                    </h2>
+                    <p class="text-xl text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                        We believe that great coffee is an art form. From the precise temperature of the water to the
+                        pressure of
+                        the tamp, every detail matters. Our baristas are not just employees; they are artisans dedicated
+                        to
+                        the
+                        craft of extraction.
+                    </p>
+                    <p class="text-xl text-stone-600 dark:text-stone-300 leading-relaxed font-light">
+                        Partnering with ethical farms across the globe, we ensure that every bean tells a story of
+                        sustainability
+                        and quality. When you sip our coffee, you're tasting the dedication of farmers from Ethiopia to
+                        Colombia.
+                    </p>
+                </div>
+                <div class="lg:w-1/2 relative group">
+                    <div
+                        class="absolute -inset-4 border border-primary/20 rounded-xl hidden lg:block group-hover:inset-0 transition-all duration-500">
+                    </div>
+                    <img alt="Barista pouring latte art into a ceramic cup"
+                        class="relative rounded-xl shadow-xl w-full object-cover aspect-[4/3] z-10"
+                        data-alt="Close up of barista pouring intricate latte art into a ceramic cup"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYB5iuFYePQXejUVY5dlc59vmllqJGWC17Yr4QUgkhA3ExUBJw9QesWO_S1MrNzbOMbqie0V12cK-VpfyMqznDSQ2wOifDl1GDWpKVu4be8B1AGOjvJaigAwKE0VTLxxJaUTnwEF3iUNiM0X_Kr-_DhF9Nbj6ibHS_8LEkvv_-JduTScqLgIbDfEvg-C2ARELdwXVg921yCkaQQf5x3G6NQSVcndzOp4djS7ai-gKGPCjcMDNYbB7gx6FgOiS0_zOU9nPuCrtjql5c" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-stone-100 dark:bg-stone-900/50 border-y border-stone-200 dark:border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-medium text-stone-900 dark:text-white mb-4">Why Choose Us</h2>
+                <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-stone-100 dark:border-stone-800 text-center group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <span
+                            class="material-icons text-primary text-3xl group-hover:text-white transition-colors">grain</span>
+                    </div>
+                    <h3 class="text-2xl font-medium text-stone-900 dark:text-white mb-3">Quality Beans</h3>
+                    <p class="text-lg text-stone-600 dark:text-stone-400 font-light leading-relaxed">
+                        Ethically sourced, single-origin beans roasted in small batches to preserve their unique flavor
+                        profiles.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-stone-100 dark:border-stone-800 text-center group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <span
+                            class="material-icons text-primary text-3xl group-hover:text-white transition-colors">bakery_dining</span>
+                    </div>
+                    <h3 class="text-2xl font-medium text-stone-900 dark:text-white mb-3">Fresh Bakes</h3>
+                    <p class="text-lg text-stone-600 dark:text-stone-400 font-light leading-relaxed">
+                        Our pastries are baked fresh every morning in our kitchen using locally sourced butter and
+                        flour.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-stone-100 dark:border-stone-800 text-center group">
+                    <div
+                        class="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <span
+                            class="material-icons text-primary text-3xl group-hover:text-white transition-colors">chair</span>
+                    </div>
+                    <h3 class="text-2xl font-medium text-stone-900 dark:text-white mb-3">Cozy Seating</h3>
+                    <p class="text-lg text-stone-600 dark:text-stone-400 font-light leading-relaxed">
+                        Designed for comfort with plush armchairs, warm lighting, and quiet corners perfect for reading.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meet the Team -->
+    <section class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Our People</span>
+                    <h2 class="text-4xl md:text-5xl font-medium text-stone-900 dark:text-white">Meet the Team</h2>
+                </div>
+                <p
+                    class="mt-4 md:mt-0 max-w-md text-xl text-stone-600 dark:text-stone-400 font-light italic text-right">
+                    The passionate souls behind your daily brew.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="group relative overflow-hidden rounded-xl">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-200">
+                        <img alt="Portrait of Head Barista smiling"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Friendly man with glasses and apron smiling in coffee shop"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjsPeVnV_el5kpjKvNJbXM_WEYZ_kX9Xx_3lidTqokO4mnWhrdChDaxoV4SMTSWQpVokPBTEpNvd_UFf9c0nuzCZ4pVgHM65LlJ89sQ-y14sioPOqZSKmCx0l46mHQVQty2xf4UPBNU6g7X3ZtjxeuCG_pIjRGDhR8-KmV_5aoYOjoZ1zSngVFd-A2UbakMp9MCsAQbRI2Jwl0eM0C9e9NvcoqSz5U845ZZAzy0RZ6qBIc-W6z5ERcREQiMPkfvvU9DyYL82ezO2CZ" />
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-20">
+                        <h3 class="text-2xl text-white font-medium">David Miller</h3>
+                        <p class="text-primary-dark text-white/90 font-light italic">Head Barista</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="group relative overflow-hidden rounded-xl">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-200">
+                        <img alt="Portrait of Founder holding a coffee cup"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Woman with curly hair and apron looking confident"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzE01OTMbM7-6yw5bOD45L_zK1f7bDX7IA0pYSoLcIY1-ZJhypnB5-0rtLvbNyukpTcEoHPqxU0yoQjmMXzUmaKY3j4Tzxd9hjOa9fhR-SGN3282KgQDUi3_XNqnSnKdSghXQSeqkHz2obwCCv-hjEcEF861IHVTxHxfu-zYVUNLdVdmvNi0ddIFCR6KxGeO8qeki5WOgU3r-3cZoNbqfAnySziRhJLJMwCmJet6uaI81TV88OEw_-RXDqQuZXdLb5M_ein0IBYSrW" />
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-20">
+                        <h3 class="text-2xl text-white font-medium">Eleanor Rigby</h3>
+                        <p class="text-primary-dark text-white/90 font-light italic">Founder</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="group relative overflow-hidden rounded-xl">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-200">
+                        <img alt="Portrait of Pastry Chef adjusting a cake"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Smiling man in chef whites holding a tray of pastries"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEeW7xK2O4ReGLFQ70i9TC2dZturlQuPI_ArcK2PWY_XALy9hXWr9Mrjm-lm0Hfe6Wps_PWQG1G1aVbVa3dDSkcKh8nDOWh8UzQVQQz-DhvH6-K7GgQV5k3OVqDv5cHiaXoSGYs5eFqeEJkpVdS0sw8obnlpp83-t-CnqwAVsxdMJMxtIp7M4bNIItw9KAMgJCuZHKocpGLI9G3RPAR6KXueAkYwKS_ay4QmoIgzErPnrkRkXaPfDMNXFZmy_JGGeFiWZYLxmCe-qf" />
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-20">
+                        <h3 class="text-2xl text-white font-medium">Marcus Chen</h3>
+                        <p class="text-primary-dark text-white/90 font-light italic">Pastry Chef</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action Banner -->
+    <section class="py-20 bg-primary/10 dark:bg-primary/5">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="material-icons text-primary text-5xl mb-6">local_cafe</span>
+            <h2 class="text-4xl md:text-5xl font-medium text-stone-900 dark:text-white mb-6">Experience the warmth
+                yourself
+            </h2>
+            <p class="text-xl text-stone-600 dark:text-stone-300 mb-10 font-light">
+                Whether you need a quiet corner to work or a lively table to catch up with friends, we have a seat
+                waiting
+                for
+                you.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                    class="bg-primary hover:bg-primary-dark text-white text-lg px-8 py-3 rounded-lg transition-colors shadow-lg">
+                    Find a Location
+                </button>
+                <a href="menu.html"
+                    class="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white text-lg px-8 py-3 rounded-lg transition-all">
+                    View Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-cream dark:bg-black pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Newsletter -->
+            <div
+                class="bg-primary/10 rounded-2xl p-8 lg:p-12 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8 border border-white/5">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-white mb-2">Join our Coffee Club</h3>
+                    <p class="text-white/70">Subscribe for seasonal updates and get 10% off your first online order.</p>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <input
+                            class="flex-grow px-5 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white/20 transition-all"
+                            placeholder="Your email address" type="email" />
+                        <button
+                            class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium shadow-lg transition-colors whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-12">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="material-icons text-primary text-2xl">coffee</span>
+                        <span class="text-xl font-semibold italic text-white">Café Moka</span>
+                    </div>
+                    <p class="text-white/60 text-sm leading-relaxed">
+                        Brewing warmth and community since 2012. Come for the coffee, stay for the company.
+                    </p>
+                </div>
+                <!-- Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Explore</h4>
+                    <ul class="space-y-3 text-sm text-white/60">
+                        <li><a class="hover:text-primary transition-colors" href="about.html">Our Story</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="menu.html">Menu</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="reviews.html">Reviews</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors" href="special-offers.html">Offers</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="faq.html">FAQ</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="contact.html">Locations</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Visit Us</h4>
+                    <ul class="space-y-3 text-sm text-white/60">
+                        <li class="flex items-start gap-2">
+                            <span class="material-icons text-primary text-base mt-0.5">place</span>
+                            <span>124 Artisan Ave,<br />Coffee District, NY 10012</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-icons text-primary text-base">schedule</span>
+                            <span>Daily: 7am - 8pm</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Socials -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-white"
+                            href="#">
+                            <!-- Simple SVG Icons for socials -->
+                            <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-white"
+                            href="#">
+                            <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-white/40 text-sm">
+                © 2023 Cozy Café &amp; Coffee House. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../public/build/assets/app-CKl8NZMC.js"></script>
+</body>
+
+</html>

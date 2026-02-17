@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cozy Café &amp; Coffee House</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Custom styles for specific aesthetics */
+
+        /* Animated Body Background */
+        body {
+            min-height: 100vh;
+            background: url("../public/images/coffee-bg.png") !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-attachment: fixed !important;
+            animation: floatBG 15s ease-in-out infinite;
+        }
+
+        @keyframes floatBG {
+
+            0%,
+            100% {
+                background-position: center center;
+            }
+
+            25% {
+                background-position: 30% 70%;
+            }
+
+            50% {
+                background-position: 70% 30%;
+            }
+
+            75% {
+                background-position: 40% 60%;
+            }
+        }
+
+        /* Liquid Glass Header */
+        .glass-header {
+            /* Reset/Override previous generic glass/dark styles */
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.2) 0%,
+                    rgba(255, 255, 255, 0.08) 50%,
+                    rgba(255, 255, 255, 0.03) 100%) !important;
+
+            backdrop-filter: blur(10px);
+            /* Use standard blur as fallback/default */
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark mode overrides if necessary - though glass usually transcends mild dark/light switches by being transparent */
+        .dark .glass-header {
+            background: linear-gradient(135deg,
+                    rgba(0, 0, 0, 0.4) 0%,
+                    rgba(0, 0, 0, 0.2) 50%,
+                    rgba(0, 0, 0, 0.1) 100%) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="../public/build/assets/app-TD2hNZJ_.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-espresso antialiased selection:bg-primary/30 min-h-screen flex flex-col ">
+    <!-- Sticky Header -->
+    <header class="fixed top-0 w-full z-50 glass-header border-b border-primary/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                <span class="material-icons text-primary text-3xl">coffee</span>
+                <span class="text-2xl font-semibold italic text-espresso dark:text-white">Café Moka</span>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a class="text-espresso hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors text-lg font-medium"
+                    href="index.html">Home</a>
+                <a class="text-espresso hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors text-lg font-medium"
+                    href="menu.html">Menu</a>
+                <a class="text-espresso hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors text-lg font-medium"
+                    href="about.html">About</a>
+                <a class="text-espresso hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors text-lg font-medium"
+                    href="contact.html">Contact</a>
+            </nav>
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <button
+                    class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-medium transition-transform transform hover:-translate-y-0.5 shadow-md shadow-primary/20">
+                    Order Now
+                </button>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button class="text-espresso dark:text-white hover:text-primary focus:outline-none">
+                    <span class="material-icons text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Main Content -->
+    
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 hero-pattern z-0"></div>
+        <div
+            class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12">
+            <!-- Text Content -->
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold tracking-wider mb-6">
+                    EST. 2012
+                </span>
+                <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6 text-espresso dark:text-white">
+                    Brewing Warmth, <br />
+                    <span class="italic text-primary">Cup by Cup.</span>
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                    Experience the finest artisan coffee in the heart of the city. Locally roasted beans, house-made
+                    pastries, and a space designed for you to pause.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="menu.html"
+                        class="bg-primary hover:bg-primary/90 text-white px-8 py-3.5 rounded-full text-lg font-medium shadow-lg shadow-primary/30 transition-all hover:scale-105">
+                        View Menu
+                    </a>
+                    <a href="#reservations"
+                        class="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3.5 rounded-full text-lg font-medium transition-all hover:scale-105">
+                        Find Us
+                    </a>
+                </div>
+                <div
+                    class="mt-12 flex items-center justify-center lg:justify-start gap-8 text-sm text-gray-500 dark:text-gray-400">
+                    <div class="flex items-center gap-2">
+                        <span class="material-icons text-primary text-base">eco</span> Organic Beans
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-icons text-primary text-base">wifi</span> Free Wifi
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-icons text-primary text-base">pets</span> Pet Friendly
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Image -->
+            <div class="w-full lg:w-1/2 relative">
+                <div
+                    class="absolute inset-0 bg-primary/20 rounded-full blur-3xl transform translate-x-12 translate-y-12 z-0">
+                </div>
+                <div
+                    class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 ease-out">
+                    <img alt="Latte art on a wooden table with a cozy atmosphere"
+                        class="w-full h-auto object-cover aspect-[4/5]"
+                        data-alt="Latte art on a wooden table with a cozy atmosphere"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0BaLRkjLpiBObEFEf6lHGzGlL873V5AIk9B2bEDs-NRuUwCU4iI67cNBumhDjR8w-9ORBXYrdpIk-WYvlmCqnQnDJOMXMiu808FsGi5V9vIiyVymrvMvyHfnzha3IOv5RWa5VGfDHIMC2eTJ3NXxyHJantZ4NTb3XjGFsMIky3iGm-71Sp0g8XMdzPO6J1F0gFYtzsIQ2UHkT5fNsogucbMcZhHRB2j91w_Ea3ktX3AOQkVxPwcWEwTJ6ydAwGm1msQDYbia4drav" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-20 bg-cream dark:bg-background-dark" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image Grid -->
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img alt="Interior of a cozy warm cafe with wooden chairs"
+                            class="rounded-xl shadow-lg mt-8 object-cover h-64 w-full"
+                            data-alt="Interior of a cozy warm cafe with wooden chairs"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3gmP80Sv2ygCZH1pBJ12b1wJUyxcpYDW1xezyOQiWdGFZvW_Cz-iICT7hw_FkPlz7FNcSYTf9Bsg9z0-bGpkPQQCRdeJtoL-WQ_8_mESBwHLshqZ0_W7djzMoBXA-JqJkaqIwTZNMSED-T3PXSx2A-U63sGYp4od1tGZvNykVp4IifCZj0DTMIPVrOcloJ8DI69kWkWpNN9_PFGrJ--Vs7u9g9-BqF52nu9nfbp7jenA34u0d1lJ89XWAidtlH42jEenGo6clfMQz" />
+                        <img alt="Barista pouring milk into coffee cup close up"
+                            class="rounded-xl shadow-lg mb-8 object-cover h-64 w-full"
+                            data-alt="Barista pouring milk into coffee cup close up"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUqtXf5X8cVOxuXFIEhreicsf7awsx865Qayk4_2qr3Muf7B2Ak6DOnRvRVGBiRnXfWciKEZ3_a4fTBzWS4UD1xqO9x-93ljCwRBLTZvuOvhf0enGJ2tzpqNCFtb-ir6YfBcKum297Xi4SW7mrVzDGv3XJskATcdnoKmYRgG-aeuZLQ63ILtWP88v_Mtq_oUPv2a8j-hUu7xvv-0RAlbC7FhhbNax9wSbnrtfrWwbFoG__koFnmMarVcYg48qpxPkckW49tKt50pr6" />
+                    </div>
+                    <!-- Decorative Circle -->
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-primary rounded-full flex items-center justify-center shadow-xl border-4 border-white dark:border-background-dark">
+                        <div class="text-center text-white">
+                            <span class="block text-3xl font-bold">10+</span>
+                            <span class="text-xs uppercase tracking-wide">Years</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Content -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-espresso dark:text-white">More than just <span
+                            class="italic text-primary">coffee.</span></h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        It started with a simple idea: create a space that feels like home. We source our beans directly
+                        from sustainable farms in Ethiopia and Colombia, ensuring that every cup tells a story of
+                        ethical farming and expert roasting.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        Our pastries are baked fresh every morning at 4 AM, filling the streets with the scent of
+                        cinnamon and butter. Whether you're here for a quick espresso or to finish your novel, we've
+                        saved a seat for you.
+                    </p>
+                    <a class="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors group"
+                        href="#">
+                        Read Our Full Story
+                        <span
+                            class="material-icons ml-2 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seasonal Specials -->
+    <section class="py-24 relative overflow-hidden"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../public/images/autumn-bg-wide.png'); background-attachment: fixed; background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-white/20 text-white text-sm font-semibold tracking-wider mb-4 border border-white/30 backdrop-blur-sm">
+                    LIMITED TIME
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-4">Autumn Harvest Collection</h2>
+                <p class="text-white/80 text-lg max-w-2xl mx-auto">Embrace the season with warm spices and comforting
+                    flavors.</p>
+            </div>
+            <div
+                class="bg-white dark:bg-background-dark rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row max-w-5xl mx-auto">
+                <div class="md:w-1/2 h-64 md:h-auto relative">
+                    <img alt="Latte with cinnamon stick and autumn leaves decoration"
+                        class="absolute inset-0 w-full h-full object-cover"
+                        data-alt="Latte with cinnamon stick and autumn leaves decoration"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc3JAjC11Xu0ZBdudXxcYVMOlmNYC5vhcZJZQq9gSVr7NzvzVLteIQBvo6eP0dnjWG5tfvEuCFqMmDHryxSpB_lMIARreY94AG3Hw-S-GZyEKSTTUqzvHRObNTRdKlxpg4WeI0yrzZnwThblnokqd0vdJuefKp9i_VazqQGsdogshtyYi9OlqEbc_9VUrB9YRgzeN71XxNu_1aACtUIEvFzuAavHc4qRrme35We9GkFcqlqgs7aKxJI7rSn6dDuP1hEXUi6RPJimEa" />
+                </div>
+                <div class="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center items-start">
+                    <h3 class="text-3xl font-bold text-espresso dark:text-white mb-2">Maple Pecan Latte</h3>
+                    <p class="text-primary font-medium text-lg mb-4">$5.50</p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Rich espresso swirled with real maple syrup and steamed oat milk, topped with house-made candied
+                        pecans and a dusting of nutmeg. The perfect companion for crisp mornings.
+                    </p>
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium shadow-md transition-all w-full md:w-auto">
+                        Order for Pickup
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Menu Grid -->
+    <section class="py-20 bg-background-light dark:bg-background-dark" id="menu">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-espresso dark:text-white mb-4">Menu Favorites</h2>
+                <div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Item 1 -->
+                <div
+                    class="bg-white dark:bg-background-dark border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img alt="Classic cappuccino in a white cup on a saucer"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Classic cappuccino in a white cup on a saucer"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVS4MsSr3_7xYqG6l2NdhR7Dlq-OgwsfWWrg1Xc1GFf5d-4ZCZsIjT6UsbZRJIv015EUCILZWrRQ7ZyOO4fCxm-fgg4jAQB5TkMPPPwwIC1deOPqCjoS79UcVFqZBVUlpR-vf4c1jmKl6TbPfrirpUftecbV5ka7zttcP9quRKIQWp-NU9CMDYaHo4OPkf92SfBzHhw8sLCF2v7wC8I9qJ-MG2h_8KcTwgZQfWwhzNK20ij6044ZmHzGh673X-0_3I12ogBbz_bA7j" />
+                        <button
+                            class="absolute bottom-3 right-3 bg-white text-primary p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-espresso dark:text-white">Cappuccino</h3>
+                            <span class="font-semibold text-primary">$4.50</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">Double shot espresso with equal parts steamed milk and
+                            foam.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div
+                    class="bg-white dark:bg-background-dark border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img alt="Freshly baked croissant on a plate"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Freshly baked croissant on a plate"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBaGFonBzT6PhDmSwCJAaNv3Qgkg1nDM6XAZlQpz5FYXtAIfJ_1gFtQESomY_ZmAqaPbucoK8jRLydYTZXlvkcYQV9fhmOEeT8ZdYsVy73bSTxgPPDW9GHlsCuoQMEONmJ5xCTE4oGOOFLEbw1twBiKz_4pbNWxsjtEdO_WhMgfqeRqQE9EZZ7LA63IdtPEwdVgIpUuqCE9Q_T7zx1QctVRLWcOJReJqt4VdBFWVpQj5Wfju-ZSbkUtbMy4yqZ3uGEldwz84wbePPM" />
+                        <button
+                            class="absolute bottom-3 right-3 bg-white text-primary p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-espresso dark:text-white">Butter Croissant</h3>
+                            <span class="font-semibold text-primary">$3.75</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">Flaky, buttery layers baked fresh every single morning.
+                        </p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div
+                    class="bg-white dark:bg-background-dark border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img alt="Iced coffee in a tall glass with milk swirl"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Iced coffee in a tall glass with milk swirl"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIMRPZxcsjibBz--fu0LHhkoMg6A3ya6OsNg_8zWhlP9qdW5cPWE3at0qkV72RSj2tgNEIjVHhrxUsKJJeAHzHBRBL6SjsFwKXjw_MCUDVcP35XIluK_Pmy2wS-z4588j91x1ztdi2fV3v4YG9OSs5lDtLmN-98dYNqUdLVluEATWm5nCoar6WuMIuhM1Uk6fl5X3otPLx9TGExjkAMm9WECNdLIlcsAyAwhpTjbx2Hroc38RpD55xfZkpiTTs9B-aKPb8IxJJw7V5" />
+                        <button
+                            class="absolute bottom-3 right-3 bg-white text-primary p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-espresso dark:text-white">Cold Brew</h3>
+                            <span class="font-semibold text-primary">$4.75</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">Steeped for 18 hours for a smooth, low-acidity flavor
+                            profile.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div
+                    class="bg-white dark:bg-background-dark border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img alt="Slice of chocolate cake on a white plate"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Slice of chocolate cake on a white plate"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfWsMoYRdLZgLc38dJio9dO9pLWAvcP26EObAJFcqCTV2fYsSMyX_cxCubJ8GZxrNz6-Z7uvJh5lz1-116IKkaqBdkOUqxZjGLkroFslJx8h4OkHPaUQ-h9Gjw9ODI_yB9IsKfCCC89pjLpnDC9YiDIW1V8IhC7-zC-9PttXxn1FQ3_bdiMVT6Kqgfke6BOeh19Gd5UCFvcsiFQpR_plTDn-bkrQeW2j8SdbKSTC6RXUb_N6H0-7gPFX22gqJRqYe_GKXq4h4cD4tP" />
+                        <button
+                            class="absolute bottom-3 right-3 bg-white text-primary p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-espresso dark:text-white">Dark Choco Tart</h3>
+                            <span class="font-semibold text-primary">$5.00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">Rich 70% cocoa ganache on a buttery shortbread crust.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="menu.html"
+                    class="inline-flex items-center text-espresso dark:text-white font-semibold border-b-2 border-primary hover:text-primary transition-colors pb-1">
+                    View Full Menu <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-20 bg-cream dark:bg-background-dark border-t border-primary/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="material-icons text-6xl text-primary/30 mb-6">format_quote</span>
+            <div class="relative">
+                <!-- Carousel content (simplified static for layout) -->
+                <blockquote
+                    class="text-2xl lg:text-3xl font-medium italic text-espresso dark:text-white leading-normal mb-8">
+                    "This is hands down the most beautiful spot in town. The attention to detail in the interior is
+                    matched only by the perfection of their espresso. A true gem."
+                </blockquote>
+                <div class="flex items-center justify-center gap-4">
+                    <img alt="Portrait of a smiling woman"
+                        class="w-12 h-12 rounded-full object-cover border-2 border-primary"
+                        data-alt="Portrait of a smiling woman"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWOXGXaCUM86m6N_cCQQPQoxLccwwYiJiR8OGEyNCx6egG5wKUy6nsen3-xDR5y_Cmkl2K-3ngGy4trvw3vGFAd9TVA14TBgbxAgSKTacjCfnED_4j2qkV8Yiw0LjkneS4404bF7iuOt-PiGZl3MB1snjGDghh3gWj0j8VoicjujlYbR9VEYGfjcQMou76_jRlprgwA3Qs3HS9chlRqqdbRBm20q81wIVZCu6mKLdqI6poo4ClC1Hy2U48AJbaXcls7UkqSKN80lwz" />
+                    <div class="text-left">
+                        <div class="font-bold text-espresso dark:text-white">Sarah Jenkins</div>
+                        <div class="text-sm text-primary">Daily Regular</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dots -->
+            <div class="flex justify-center gap-2 mt-8">
+                <button class="w-3 h-3 rounded-full bg-primary"></button>
+                <button class="w-3 h-3 rounded-full bg-primary/30 hover:bg-primary/60 transition-colors"></button>
+                <button class="w-3 h-3 rounded-full bg-primary/30 hover:bg-primary/60 transition-colors"></button>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter & Footer -->
+    <section class="py-20 bg-cream dark:bg-background-dark border-t border-primary/10" id="reservations">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl lg:text-5xl font-bold text-espresso dark:text-white mb-4">Reserve Your Table</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Whether it's a quiet morning read or a lively afternoon gathering, we'll make sure your favorite
+                    spot is waiting for you. Experience the perfect blend of comfort and craft.
+                </p>
+            </div>
+            <div class="bg-white dark:bg-espresso/20 p-8 lg:p-12 rounded-xl shadow-xl border border-primary/5">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="block text-sm font-semibold text-espresso dark:text-gray-200" for="name">Full
+                            Name</label>
+                        <input
+                            class="w-full px-4 py-3 rounded-lg border-gray-200 focus:border-primary focus:ring-primary dark:bg-background-dark dark:border-gray-700 dark:text-white"
+                            id="name" placeholder="Enter your name" type="text" />
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-semibold text-espresso dark:text-gray-200"
+                            for="date">Date</label>
+                        <input
+                            class="w-full px-4 py-3 rounded-lg border-gray-200 focus:border-primary focus:ring-primary dark:bg-background-dark dark:border-gray-700 dark:text-white"
+                            id="date" type="date" />
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-semibold text-espresso dark:text-gray-200"
+                            for="time">Time</label>
+                        <select
+                            class="w-full px-4 py-3 rounded-lg border-gray-200 focus:border-primary focus:ring-primary dark:bg-background-dark dark:border-gray-700 dark:text-white"
+                            id="time">
+                            <option>08:00 AM</option>
+                            <option>10:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>04:00 PM</option>
+                            <option>06:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-semibold text-espresso dark:text-gray-200" for="guests">Number
+                            of Guests</label>
+                        <select
+                            class="w-full px-4 py-3 rounded-lg border-gray-200 focus:border-primary focus:ring-primary dark:bg-background-dark dark:border-gray-700 dark:text-white"
+                            id="guests">
+                            <option>1 Person</option>
+                            <option>2 People</option>
+                            <option>3 People</option>
+                            <option>4 People</option>
+                            <option>5+ People</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2 mt-4">
+                        <button
+                            class="w-full bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-lg shadow-primary/30 transform hover:-translate-y-0.5"
+                            type="submit">
+                            Book Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-cream dark:bg-black pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Newsletter -->
+        <div
+            class="bg-primary/10 rounded-2xl p-8 lg:p-12 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8 border border-white/5">
+            <div class="lg:w-1/2">
+                <h3 class="text-2xl font-bold text-white mb-2">Join our Coffee Club</h3>
+                <p class="text-white/70">Subscribe for seasonal updates and get 10% off your first online order.</p>
+            </div>
+            <div class="lg:w-1/2 w-full">
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input
+                        class="flex-grow px-5 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white/20 transition-all"
+                        placeholder="Your email address" type="email" />
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium shadow-lg transition-colors whitespace-nowrap">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-12">
+            <!-- Brand -->
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-icons text-primary text-2xl">coffee</span>
+                    <span class="text-xl font-semibold italic text-white">Café Moka</span>
+                </div>
+                <p class="text-white/60 text-sm leading-relaxed">
+                    Brewing warmth and community since 2012. Come for the coffee, stay for the company.
+                </p>
+            </div>
+            <!-- Links -->
+            <div>
+                <h4 class="text-white font-bold mb-6">Explore</h4>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li><a class="hover:text-primary transition-colors" href="about.html">Our Story</a>
+                    </li>
+                    <li><a class="hover:text-primary transition-colors" href="menu.html">Menu</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+                    </li>
+                    <li><a class="hover:text-primary transition-colors" href="reviews.html">Reviews</a>
+                    </li>
+                    <li><a class="hover:text-primary transition-colors"
+                            href="special-offers.html">Offers</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="faq.html">FAQ</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="contact.html">Locations</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div>
+                <h4 class="text-white font-bold mb-6">Visit Us</h4>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li class="flex items-start gap-2">
+                        <span class="material-icons text-primary text-base mt-0.5">place</span>
+                        <span>124 Artisan Ave,<br />Coffee District, NY 10012</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="material-icons text-primary text-base">schedule</span>
+                        <span>Daily: 7am - 8pm</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Socials -->
+            <div>
+                <h4 class="text-white font-bold mb-6">Follow Us</h4>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-white"
+                        href="#">
+                        <!-- Simple SVG Icons for socials -->
+                        <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-white"
+                        href="#">
+                        <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-8 text-center text-white/40 text-sm">
+            © 2023 Cozy Café &amp; Coffee House. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="../public/build/assets/app-CKl8NZMC.js"></script>
+</body>
+
+</html>
